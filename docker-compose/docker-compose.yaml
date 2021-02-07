@@ -30,11 +30,12 @@ services:
       DEBUG_MODE: "$DEBUG_MODE"
       JITSI_URL: $JITSI_URL
       JITSI_PRIVATE_MODE: "$JITSI_PRIVATE_MODE"
+      START_ROOM_URL: "$START_ROOM_URL"
       HOST: "0.0.0.0"
       NODE_ENV: development
-      API_URL: pusher.scoutnet.im
-      UPLOADER_URL: uploader.scoutnet.im
-      ADMIN_URL: admin.scoutnet.im
+      API_URL: pusher.cybercamp-test.rover.camp
+      UPLOADER_URL: uploader.cybercamp-test.rover.camp
+      ADMIN_URL: admin.cybercamp-test.rover.camp
       STARTUP_COMMAND_1: yarn install
       TURN_SERVER: "turn:coturn.workadventu.re:443,turns:coturn.workadventu.re:443"
       TURN_USER: workadventure
@@ -45,11 +46,14 @@ services:
     labels:
       # Forward HTTP to HTTPs
       - "traefik.http.middlewares.front-https.redirectscheme.scheme=https"
-      - "traefik.http.routers.front.rule=Host(`play.scoutnet.im`)"
+
+      - "traefik.http.routers.front.rule=Host(`play.cybercamp-test.rover.camp`)"
       - "traefik.http.routers.front.entryPoints=web,traefik"
       - "traefik.http.routers.front.middlewares=front-https"
+
       - "traefik.http.services.front.loadbalancer.server.port=8080"
-      - "traefik.http.routers.front-ssl.rule=Host(`play.scoutnet.im`)"
+
+      - "traefik.http.routers.front-ssl.rule=Host(`play.cybercamp-test.rover.camp`)"
       - "traefik.http.routers.front-ssl.entryPoints=websecure"
       - "traefik.http.routers.front-ssl.tls=true"
       - "traefik.http.routers.front-ssl.tls.certresolver=letsencrypt"
@@ -72,10 +76,10 @@ services:
     volumes:
       - ./pusher:/usr/src/app
     labels:
-      - "traefik.http.routers.pusher.rule=Host(`pusher.scoutnet.im`)"
+      - "traefik.http.routers.pusher.rule=Host(`pusher.cybercamp-test.rover.camp`)"
       - "traefik.http.routers.pusher.entryPoints=web"
       - "traefik.http.services.pusher.loadbalancer.server.port=8080"
-      - "traefik.http.routers.pusher-ssl.rule=Host(`pusher.scoutnet.im`)"
+      - "traefik.http.routers.pusher-ssl.rule=Host(`pusher.cybercamp-test.rover.camp`)"
       - "traefik.http.routers.pusher-ssl.entryPoints=websecure"
       - "traefik.http.routers.pusher-ssl.tls=true"
       - "traefik.http.routers.pusher-ssl.tls.certresolver=letsencrypt"
@@ -88,14 +92,18 @@ services:
     labels:
       # Forward HTTP to HTTPS
       - "traefik.http.middlewares.maps-https.redirectscheme.scheme=https"
-      - "traefik.http.routers.maps.rule=Host(`maps.scoutnet.im`)"
+
+      - "traefik.http.routers.maps.rule=Host(`maps.cybercamp-test.rover.camp`)"
       - "traefik.http.routers.maps.entryPoints=web"
       - "traefik.http.routers.maps.middlewares=maps-https"
+
       # Serve maps via HTTPS, add CORS headers and gzip compression
       - "traefik.http.middlewares.maps-cors.headers.accesscontrolalloworigin=*"
       - "traefik.http.middlewares.maps-compress.compress=true"
+
       - "traefik.http.services.maps-ssl.loadbalancer.server.port=80"
-      - "traefik.http.routers.maps-ssl.rule=Host(`maps.scoutnet.im`)"
+
+      - "traefik.http.routers.maps-ssl.rule=Host(`maps.cybercamp-test.rover.camp`)"
       - "traefik.http.routers.maps-ssl.entryPoints=websecure"
       - "traefik.http.routers.maps-ssl.tls=true"
       - "traefik.http.routers.maps-ssl.tls.certresolver=letsencrypt"
@@ -117,10 +125,10 @@ services:
     volumes:
       - ./back:/usr/src/app
     labels:
-      - "traefik.http.routers.back.rule=Host(`api.scoutnet.im`)"
+      - "traefik.http.routers.back.rule=Host(`api.cybercamp-test.rover.camp`)"
       - "traefik.http.routers.back.entryPoints=web"
       - "traefik.http.services.back.loadbalancer.server.port=8080"
-      - "traefik.http.routers.back-ssl.rule=Host(`api.scoutnet.im`)"
+      - "traefik.http.routers.back-ssl.rule=Host(`api.cybercamp-test.rover.camp`)"
       - "traefik.http.routers.back-ssl.entryPoints=websecure"
       - "traefik.http.routers.back-ssl.tls=true"
       - "traefik.http.routers.back-ssl.tls.certresolver=letsencrypt"
@@ -136,10 +144,10 @@ services:
     volumes:
       - ./uploader:/usr/src/app
     labels:
-      - "traefik.http.routers.uploader.rule=Host(`uploader.scoutnet.im`)"
+      - "traefik.http.routers.uploader.rule=Host(`uploader.cybercamp-test.rover.camp`)"
       - "traefik.http.routers.uploader.entryPoints=web"
       - "traefik.http.services.uploader.loadbalancer.server.port=8080"
-      - "traefik.http.routers.uploader-ssl.rule=Host(`uploader.scoutnet.im`)"
+      - "traefik.http.routers.uploader-ssl.rule=Host(`uploader.cybercamp-test.rover.camp`)"
       - "traefik.http.routers.uploader-ssl.entryPoints=websecure"
       - "traefik.http.routers.uploader-ssl.tls=true"
       - "traefik.http.routers.uploader-ssl.tls.certresolver=letsencrypt"
@@ -152,13 +160,17 @@ services:
     labels:
       # Forward HTTP to HTTPS
       - "traefik.http.middlewares.website-https.redirectscheme.scheme=https"
-      - "traefik.http.routers.website.rule=Host(`scoutnet.im`)"
+
+      - "traefik.http.routers.website.rule=Host(`cybercamp-test.rover.camp`)"
       - "traefik.http.routers.website.entryPoints=web"
       - "traefik.http.routers.website.middlewares=website-https"
+
       # Serve website via HTTPS and gzip compression
       - "traefik.http.middlewares.website-compress.compress=true"
+
       - "traefik.http.services.website-ssl.loadbalancer.server.port=80"
-      - "traefik.http.routers.website-ssl.rule=Host(`scoutnet.im`)"
+
+      - "traefik.http.routers.website-ssl.rule=Host(`cybercamp-test.rover.camp`)"
       - "traefik.http.routers.website-ssl.entryPoints=websecure"
       - "traefik.http.routers.website-ssl.tls=true"
       - "traefik.http.routers.website-ssl.tls.certresolver=letsencrypt"
