@@ -12,7 +12,7 @@
          "target":"map.json"
         }
     },
- "height":34,
+ "height":100,
  "infinite":false,
  "layers":[],
  "nextlayerid":28,
@@ -1275,5 +1275,5 @@
  "tilewidth":32,
  "type":"map",
  "version":1.4,
- "width":46
+ "width":100
 }
