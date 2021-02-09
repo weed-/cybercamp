@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset version="1.4" tiledversion="1.4.3" name="tileset-basechip-pipo" tilewidth="32" tileheight="32" tilecount="1064" columns="8">
- <image source="tileset-basechip-pipo.png" width="256" height="4256"/>
+ <image source="basechip-pipo.png" width="256" height="4256"/>
  <tile id="16">
   <properties>
    <property name="collides" type="bool" value="true"/>
