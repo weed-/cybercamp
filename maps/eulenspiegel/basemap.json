@@ -57,8 +57,19 @@
          "width":256,
          "x":0,
          "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":33,
+         "name":"floorLayer",
+         "objects":[],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
         }],
- "nextlayerid":33,
+ "nextlayerid":34,
  "nextobjectid":2,
  "orientation":"orthogonal",
  "renderorder":"right-down",
