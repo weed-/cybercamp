@@ -212,7 +212,7 @@
         {
          "columns":16,
          "firstgid":1,
-         "image":"tilesets_deviant_milkian_1.png",
+         "image":"..\/tilesets\/deviant_milkian_1.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -937,7 +937,7 @@
         {
          "columns":8,
          "firstgid":257,
-         "image":"floortileset.png",
+         "image":"..\/tilesets\/floortileset.png",
          "imageheight":256,
          "imagewidth":256,
          "margin":0,
@@ -960,7 +960,7 @@
         {
          "columns":18,
          "firstgid":321,
-         "image":"tileset-lagerfeuer.png",
+         "image":"..\/tilesets\/lagerfeuer.png",
          "imageheight":96,
          "imagewidth":576,
          "margin":0,
@@ -1214,7 +1214,7 @@
         {
          "columns":8,
          "firstgid":375,
-         "image":"tileset-basechip-pipo.png",
+         "image":"..\/tilesets\/basechip-pipo.png",
          "imageheight":4256,
          "imagewidth":256,
          "margin":0,
