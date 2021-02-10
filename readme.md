@@ -8,7 +8,7 @@ rovercamp (https://rover.camp) baut hier seine Online-Umgebung. Magst du eine Ma
   * Siehe auch **Layer-Crashkurs**
   * Schaut unter https://workadventu.re/map-building/wa-maps vorbei für eine umfangreiche Anleitung 
 4. Pushed eure Karte in euer Repository
-5. Testet eure Karte, in dem ihr den folgenden Link anpasst: https://play.workadventu.re/_/global/weed-.github.io/cybercamp/maps/copy-me.json). Am besten geht dies mit Chromium-basierten Browser wie Chromium, Brave, Opera, Edge, oder Chrome. Manchmal kann es nach dem Push ein paar Minuten dauern, bis die neue Karte abrufbar ist. Häufig hilft auch ein neuladen der Seite, wenn ihr vorher euren Browser-Cache gelöscht habt. Oder ihr nutzt einfach den Inkognito-Modus, der ist eh viel besser
+5. Testet eure Karte, in dem ihr den folgenden Link auf den Namen eurer Karte anpasst: https://play.workadventu.re/_/global/weed-.github.io/cybercamp/maps/copy-me.json. Am besten geht dies mit Chromium-basierten Browser wie Chromium, Brave, Opera, Edge, oder Chrome. Manchmal kann es nach dem Push ein paar Minuten dauern, bis die neue Karte abrufbar ist. Häufig hilft auch ein neuladen der Seite, wenn ihr vorher euren Browser-Cache gelöscht habt. Oder ihr nutzt einfach den Inkognito-Modus, der ist eh viel besser
 6. Wiederholt die Schritte 3.-6.
 7. Erstellt einen Pull request, damit wir eure Karte zu unserer Welt hinzufügen. Spieler können dann eure Karte über unsere Grundkarte betreten
 8. Erweitert dieses **readme.md** in eurem Fork um weitere wichtige Punkte, die wir garantiert vergessen haben. Anschließend wie bei 4. und 6. vorgehen, um uns eure Änderungen zurückzuspielen
