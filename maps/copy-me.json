@@ -106,6 +106,12 @@
          "id":38,
          "name":"jitsi_2",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"jitsiRoom",
+                 "type":"string",
+                 "value":"2"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":32,
