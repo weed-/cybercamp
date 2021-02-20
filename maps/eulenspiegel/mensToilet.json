@@ -38,7 +38,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"\/basemap.json#startFromToilet"
+                 "value":"basemap.json#startFromToilet"
                 }],
          "type":"tilelayer",
          "visible":true,

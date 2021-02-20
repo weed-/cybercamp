@@ -68,7 +68,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"\/mensToilet.json"
+                 "value":"mensToilet.json"
                 }],
          "type":"tilelayer",
          "visible":true,
