@@ -50,7 +50,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"http:\/\/osmc"
+                 "value":"https:\/\/www.google.de"
                 }, 
                 {
                  "name":"openWebsiteTrigger",
