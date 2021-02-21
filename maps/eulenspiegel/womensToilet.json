@@ -9,8 +9,7 @@
         },
      "export":
         {
-         "format":"json",
-         "target":"."
+         "format":"json"
         }
     },
  "height":16,
@@ -38,7 +37,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"basemap.json#startFromMensToilet"
+                 "value":"basemap.json#startFromWomensToilet"
                 }],
          "type":"tilelayer",
          "visible":true,
