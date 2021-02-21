@@ -50,7 +50,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"http:\/\/blobbyvolley.de\/data\/bv2browser\/index.html"
+                 "value":"http:\/\/osmc"
                 }, 
                 {
                  "name":"openWebsiteTrigger",
