@@ -744,6 +744,19 @@
                         }]
                 }],
          "tilewidth":32
+        }, 
+        {
+         "columns":10,
+         "firstgid":2207,
+         "image":"..\/tilesets\/Jurte.png",
+         "imageheight":224,
+         "imagewidth":320,
+         "margin":0,
+         "name":"Jurte",
+         "spacing":0,
+         "tilecount":70,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
