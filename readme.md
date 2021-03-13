@@ -32,14 +32,14 @@ Erweitere diese **readme.md** in deinem Fork um alle wichtige Punkte, die wir ve
 # Layer-Crashkurs
 * Die Beispielkarte enthält die wichtigsten Ebenen ("Layer"), die  jede Karte benötigt. Fügt nach belieben weitere Ebenen hinzu, und lasst euch nicht durch unsere mickrige reativität einschränken.
 * *Bitte* nutzt keine Gruppen, um eure Layer zu clustern. Auch wenn Tiled dies unterstützt, Cybercamp kann das nicht!
-* **start**: In diesem Layer werden die Startpunkte der Spieler festgelegt
-* **exitToBase**: In diesem Layer wird der Ausgang zu unserer basemap festgelegt. Hierzu ist das Property "exitUrl" mit dem Wert "basemap.json#startFrom[DEIN_MAPNAME]" also z.b. "basemap.json#startFromChapel" 
-* **collision**: Dies ist der Layer, in dem nicht betretbare Objekte der **objects1/2/3** Layer markiert werden  sollten (z.b. Mauern, Bäume). In der Beispielkarte sind dies z.B. das Feuer, die Veranda, oder der Brunnen.
-* **bottom**: Dies ist der Basislayer, welche den "Boden" enthalten sollte.
-* **objects1/2/3**: Alle Objekte (Bäume, Faxgeräte, Jurtenburgen etc.) sollten hier platziert werden. Beachtet auch den Layer **collision** zur Verhinderung, dass Spieler Objekte betreten können
-* **jitsi_veranda** Dies ist ein Layer für Jitsi-Räume. Alle Spieler, die sich auf einem Jitsi-Layer befinden, werden in einer Konferenz zusammengeschaltet und können sich unterhalten und Ihr Video oder Ihren Bildschirm teilen. Falls ihr mehrere Jitsi-Räume auf eurer Karte benötigt, müsst Ihr mehrere Jitsi-Layer hinzufügen, und in dessen Eigenschaft ("property") bei "jitsiRoom" einen eindeutigen Namen vergeben
-* **floorLayer**: Dies ist der Layer, auf dem sich die Spieler bewegen. Alle vorher genannten Layer liegen darunter, sodass ein Spieler sich über diesen befindet. Der Layer **top** ist über den Spielern, und verdeckt diese somit. An diesem Layer darf nichts geändert werden, er kann aber frei verschoben werden
-* **top**: Dies ist der Layer, welcher über den Spielern dargestellt wird. So kann hier z.B. ein freistehendes Dach gezeichnet werden, unter denen die Spieler "verschwinden"
+* `start` Startpunkte ("Spawnpoints") der Spieler
+* `exitToBase` Ausgang zu unserer basemap. Hierzu ist das Property "exitUrl" zu befüllen. Nimm "basemap.json#startFrom[DEIN_MAPNAME]" also z.b. "basemap.json#startFromChapel" 
+* `collision` Nicht betretbare Objekte, wie Mauern oder Bäume. In der Beispielkarte sind dies unter anderem das Feuer, die Veranda, oder der Brunnen
+* `bottom` Basislayer mit dem untersten "Boden"
+* `objects1/2/3` Welt-Objekte wie Bäume, Statuen, Faxgeräte, Jurtenburgen und so weiter. Auf dem Layer **collision** kannst du verhindern dass Spieler Objekte betreten können
+* `jitsi_veranda` Ein Jitsi-Raum. Alle Spieler, die sich auf einem Jitsi-Layer befinden, werden in einer Konferenz zusammengeschaltet und können sich unterhalten und Ihr Video oder Ihren Bildschirm teilen. Falls du mehrere gertrennte Räume auf deiner Karte benötigt, musst du mehrere Jitsi-Layer hinzufügen, und in dessen Eigenschaft ("property") bei "jitsiRoom" einen Namen vergeben
+* `floorLayer` Hier bewegen sich die Spieler. Alle vorher genannten Layer liegen darunter, sodass ein Spieler "darüber" läuft. Der Layer **top** ist dann *über* den Spielern, und verdecken diese. An diesem Layer darf nichts geändert werden, er kann aber frei verschoben werden
+* `top` Wird über den Spielern dargestellt. MAn kann hier Bäume oder ein freistehendes Dach zeichnen, unter dem die Spieler "verschwinden"
 
 # Happy Mapping!
 Wir sind gespannt ⚜
