@@ -7,9 +7,6 @@ services:
       - "--providers.docker"
       - "--entryPoints.web.address=:80"
       - "--entryPoints.websecure.address=:443"
-      - "--certificatesresolvers.letsencrypt.acme.tlschallenge=true"
-      - "--certificatesresolvers.letsencrypt.acme.email=muetze@scoutnet.de"
-      - "--certificatesresolvers.letsencrypt.acme.storage=acme.json"
       # - "--certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web"
     ports:
       - "80:80"
@@ -22,7 +19,6 @@ services:
       - maps
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./traefik/acme.json:/acme.json
 
   front:
     image: thecodingmachine/nodejs:14
