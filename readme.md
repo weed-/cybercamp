@@ -5,7 +5,7 @@
 rovercamp (https://rover.camp) baut hier das cybercamp. Magst du helfen?
 
 # Kurzanleitung
-Beschreibt wie man schnell mitbauen kann, mit und ohne git.
+Beschreibt wie man schnell mitbauen kann, mit und ohne git. Mit ist einfacher, aber ohne geht natürlich auch.
 1. Dieses Repository forken (oder als ZIP herunterladen)
 2. Für Profis: Veröffentliche dein Repository auf "GitHub Pages"
     * Dann kann man von da aus sofort testen
