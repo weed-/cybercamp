@@ -246,7 +246,7 @@
         {
          "columns":16,
          "firstgid":1,
-         "image":"..\/..\/tilesets\/deviant_milkian_1.png",
+         "image":"..\/assets\/tilesets\/deviant_milkian_1.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -971,7 +971,7 @@
         {
          "columns":8,
          "firstgid":257,
-         "image":"..\/..\/tilesets\/floor.png",
+         "image":"..\/assets\/tilesets\/floor.png",
          "imageheight":256,
          "imagewidth":256,
          "margin":0,
@@ -994,7 +994,7 @@
         {
          "columns":8,
          "firstgid":321,
-         "image":"..\/..\/tilesets\/basechip-pipo.png",
+         "image":"..\/assets\/tilesets\/basechip-pipo.png",
          "imageheight":4256,
          "imagewidth":256,
          "margin":0,
@@ -1007,7 +1007,7 @@
         {
          "columns":12,
          "firstgid":1385,
-         "image":"..\/..\/tilesets\/addwork.png",
+         "image":"..\/assets\/tilesets\/addwork.png",
          "imageheight":2048,
          "imagewidth":384,
          "margin":0,
