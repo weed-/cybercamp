@@ -1,5 +1,6 @@
 
-![Rovercamp Cybercamp](https://raw.githubusercontent.com/weed-/cybercamp/master/assets/logo/rovercamp_cybercamp-2021_sw.png "Cybercamp 2021")
+![Rovercamp Cybercamp](https://taw.githubusercontent.com/weed-/cybercamp/master/maps/assets/logo/rovercamp_cybercamp-2021_sw.png)
+
 
 # cybercamp
 rovercamp (https://rover.camp) baut hier das cybercamp. Magst du helfen?
