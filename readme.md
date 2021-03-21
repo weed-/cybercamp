@@ -1,5 +1,5 @@
 
-![Rovercamp Cybercamp](https://taw.githubusercontent.com/weed-/cybercamp/master/maps/assets/logo/rovercamp_cybercamp-2021_sw.png)
+![Rovercamp Cybercamp](https://raw.githubusercontent.com/weed-/cybercamp/master/maps/assets/logo/rovercamp_cybercamp-2021_sw.png)
 
 
 # cybercamp
