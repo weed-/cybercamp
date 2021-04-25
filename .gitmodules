@@ -1,0 +1,3 @@
+[submodule "workadventure"]
+	path = workadventure
+	url = https://github.com/scoutnet/workadventure.git

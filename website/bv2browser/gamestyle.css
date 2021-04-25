@@ -1,0 +1,8 @@
+@font-face {
+	font-family: Blobby;
+	src: url('data/font/blobby.ttf');
+}
+
+#gamediv {
+	font-family: Blobby;    
+}
