@@ -1,0 +1,52 @@
+<style>
+    *{
+        font-family: 'Open Sans', sans-serif;
+        cursor: url('/resources/logos/cursor_normal.png'), auto;
+    }
+    * a, button, select{
+        cursor: url('/resources/logos/cursor_pointer.png'), pointer;
+    }
+    #gameMenu button {
+        background-color: black;
+        color: white;
+        border-radius: 7px;
+        padding-bottom: 2px;
+    }
+    #gameMenu section {
+        margin: 10px;
+    }
+    section#socialLinks{
+        position: absolute;
+        margin-bottom: 0;
+    }
+    section#socialLinks img{
+        width: 32px;
+        cursor: url('/resources/logos/cursor_pointer.png'), pointer;
+    }
+</style>
+
+<div id="gameMenu" hidden>
+
+    <main>
+        <section>
+            <button id="shareButton">Share url</button>
+        </section>
+        <section>
+            <button id="changeNameButton">Edit name</button>
+        </section>
+        <section>
+            <button id="changeSkinButton">Edit skin</button>
+        </section>
+        <section>
+            <button id="editGameSettingsButton">Settings</button>
+        </section>
+        <section>
+            <button id="showJoystick">Show joystick</button>
+        </section>
+        <section id="adminConsoleSection" hidden>
+            <button id="adminConsoleButton">Admin console</button>
+        </section>
+        <section id="socialLinks" hidden>
+        </section>
+    </main>
+</div>
