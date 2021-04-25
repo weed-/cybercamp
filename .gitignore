@@ -1,3 +1,4 @@
 .env
 tilesets/Jurte_32x32.png
+ssl/acme.json
 maps/eulenspiegel/basemap.png

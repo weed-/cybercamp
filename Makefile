@@ -13,7 +13,10 @@ export UPLOADER_URL
 export ADMIN_URL
 
 .PHONY: init
-init: .env front
+init: .env
+	@cp .env workadventure
+	@cp front/dist/index.html.tmpl workadventure/front/dist/index.html.tmpl
+	@cd workadventure && make init
 
 .env:
 	@echo "please create .env file from .env.template"
@@ -22,6 +25,7 @@ init: .env front
 .PHONY: front
 front: .env
 	@cp .env workadventure
+	@cp front/dist/index.html.tmpl workadventure/front/dist/index.html.tmpl
 	@cd workadventure && make front
 
 .PHONY: run
