@@ -1,6 +1,4 @@
 [submodule "workadventure"]
 	path = workadventure
 	url = https://github.com/scoutnet/workadventure.git
-[submodule "maps"]
-	path = maps
-	url = https://github.com/weed-/cybercamp-maps
+

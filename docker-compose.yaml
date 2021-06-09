@@ -116,7 +116,7 @@ services:
   maps:
     image: nginx:alpine
     volumes:
-      - ./maps:/usr/share/nginx/html
+      - ../cybercamp-maps:/usr/share/nginx/html
     labels:
       # Forward HTTP to HTTPS
       - "traefik.http.middlewares.maps-https.redirectscheme.scheme=https"
