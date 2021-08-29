@@ -140,10 +140,7 @@ services:
   website:
     image: nginx:alpine
     volumes:
-      - ./backoffice/default.conf:/etc/nginx/conf.d/default.conf
-      - static:/static
-    depends_on:
-      - backoffice
+      - ./website:/usr/share/nginx/html
     labels:
       # Forward HTTP to HTTPS
       - "traefik.http.middlewares.website-https.redirectscheme.scheme=https"
@@ -163,38 +160,3 @@ services:
       - "traefik.http.routers.website-ssl.tls.certresolver=letsencrypt"
       - "traefik.http.routers.website-ssl.middlewares=website-compress"
 
-  backoffice_db:
-    image: postgres:13.2
-    environment:
-      - POSTGRES_DB=${DB_NAME}
-      - POSTGRES_USER=${DB_USER}
-      - POSTGRES_PASSWORD=${DB_PASSWORD}
-
-  backoffice:
-    build: https://github.com/chschenk/cybercamp_backoffice.git#v0.8.0
-    volumes:
-      - static:/static
-    environment:
-      - DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}
-      - DJANGO_ALLOWED_HOSTS=${DJANGO_ALLOWED_HOSTS}
-      - DJANGO_STATIC_ROOT=/static/
-      - DJANGO_DB_HOST=backoffice_db
-      - DJANGO_DB_BACKEND=postgresql
-      - DJANGO_DB_NAME=${DB_NAME}
-      - DJANGO_DB_USER=${DB_USER}
-      - DJANGO_DB_PASSWORD=${DB_PASSWORD}
-      - DJANGO_DB_PORT=5432
-      - DJANGO_EMAIL_BACKEND=smtp
-      - DJANGO_EMAIL_HOST=${DJANGO_EMAIL_HOST}
-      - DJANGO_EMAIL_USER=${DJANGO_EMAIL_USER}
-      - DJANGO_EMAIL_FROM=${DJANGO_EMAIL_FROM}
-      - DJANGO_EMAIL_PASSWORD=${DJANGO_EMAIL_PASSWORD}
-      - DJANGO_EMAIL_EMAIL_USE_TLS=${DJANGO_EMAIL_USE_TLS}
-      - DJANGO_EMAIL_EMAIL_USE_SSL=${DJANGO_EMAIL_USE_SSL}
-      - WORKADVENTURE_API_TOKEN=${ADMIN_API_TOKEN}
-      - WORKADVENTURE_URL=https://play.${BASE_DOMAIN}/
-    depends_on:
-      - backoffice_db
-
-volumes:
-  static:
